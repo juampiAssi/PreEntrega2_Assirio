@@ -7,58 +7,113 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="shortcut icon" href="img/jp-logo.jpg" type="image/x-icon">
   <link rel="stylesheet" href="./style/estilos.css">
   <title>Portfolio</title>
 </head>
 
 <body>
   <!-- Nav -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Navbar</a>
-      <button class="navbar-toggler ms-lg-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./pages/about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./pages/projects.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./pages/curriculum.html">Curriculum</a>
-          </li>
-          <li> <a href="./pages/contactame.html" class="nav-link">Contactame</li>
-          <!-- <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li> -->
-        </ul>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-md navStyle">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./img/jp-logo.jpg" alt="Bootstrap" width="40" height="34">
+        </a>
+        <button class="navbar-toggler ms-lg-auto ms-auto" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link navStyle" aria-current="page" href="./pages/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navStyle" href="./pages/projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navStyle" href="./pages/curriculum.html">Curriculum</a>
+            </li>
+          </ul>
+        </div>
+        <form class="d-flex justify-content-end">
+          <a class="btn btn-outline-success me-2 d-none d-lg-block buttonStyle" type="button"
+            href="./pages/contactame.html">Contactame</a>
+        </form>
       </div>
-      <form class="d-flex justify-content-end">
-        <button class="btn btn-outline-success me-2 d-none d-lg-block" type="button"
-          href="./pages/contactame.html">Contactame</button>
-      </form>
-    </div>
-  </nav>
-  <div class="container text-center">
-
-    <div class="row row justify-content-evenly">
-      <div class="col 4">
-        <h1 href="#">Porfolio</h1>
-      </div>
-      <div class="col 4">
-        <h3>imagen mia</h3>
-      </div>
-    </div>
+    </nav>
   </div>
 
+  <!-- MAIN -->
+  <main class="container mt-5 py-5">
+    <div class="row justify-content-evenly mt-5 py-5">
+      <div class="col-xl-6 col-md-6 col-sm-12 d-flex align-items-center justify-content-center mx-5">
+        <div class="d-flex flex-column">
+          <h1>Designer & Developer</h1>
+          <p>I am a UX-UI designer with a passion for creating attractive and effective digital experiences for
+            users.
+            In addition, I have a background in web development, which puts me in a unique position in the world of
+            web
+            design thanks to my passion for design, code and interaction.</p>
+        </div>
+      </div>
+      <div class="col-xl-4 col-md-4 col-sm-12 d-flex align-items-center justify-content-center mx-5">
+        <img src="./img/fotoperfil2.jpg" alt="#" class="img-fluid imgStyle">
+      </div>
+    </div>
+  </main>
 
+  <!-- WORK -->
+  <section class="container mt-4 py-4">
+    <div class="row justify-content-evenly">
+      <div class="card card-animation col-xl-8 col-sm-12">
+        <img src="./img/habitime.jpg" class="card-img-top cardStyle img-fluid custom-image" alt="...">
+        <div class="card-body">
+          <h5 class="card-title custom-title">Habitime</h5>
+          <p class="card-text custom-text">Esta es mi primera aplicación creada para el trabajo de diseño de
+            aplicaciones de CoderHouse.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-
-
+  <!-- FOOTER -->
+  <div class="container-fluid mt-5">
+    <footer class="row text-center d-flex align-items-center footerStyle">
+      <div class="col-lg-6 col-xs-12 d-flex align-items-center justify-content-center">
+        <!-- instagram -->
+        <a class="icon-link icon-link-hover" style="--bs-link-hover-color-rgb: 25, 135, 84;"
+          href="https://www.instagram.com/juampiassirio/">
+          <img src="./img/instagram.svg" alt="" width="40" height="34" class="logoStyle">
+          <svg class="bi" aria-hidden="true">
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </a>
+        <!-- linkedin -->
+        <a class="icon-link icon-link-hover" style="--bs-link-hover-color-rgb: 25, 135, 84;"
+          href="https://www.linkedin.com/in/juanpabloassirio/">
+          <img src="./img/linkedin.svg" alt="" width="35" height="28">
+          <svg class="bi" aria-hidden="true">
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </a>
+        <!-- behance -->
+        <a class="icon-link icon-link-hover" style="--bs-link-hover-color-rgb: 25, 135, 84;"
+          href="https://www.behance.net/juampiassirio">
+          <img src="./img/behance.svg" alt="" width="40" height="34">
+          <svg class="bi" aria-hidden="true">
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </a>
+      </div>
+      <!-- contacto -->
+      <div class="col-lg-6 col-xs-12">
+        <h3>Copyright © 2023 Juan Pablo Assirio. All rights reserved.</h3>
+      </div>
+    </footer>
+  </div>
 
 
 
